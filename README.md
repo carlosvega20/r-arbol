@@ -6,9 +6,16 @@ ReactJS Json Tree Viewer
 ##Demo
 http://r-arbol.surge.sh/
 
+##Usage
+npm install -g r-arbol
+
+then in your code:
+
+`import TreeView from "r-arbol"`
+
 Based on a Json Object:
 
-`{
+`var jsonObj = {
   "id": 1,
   "name": "Foo",
   "price": 123,
@@ -24,6 +31,8 @@ Based on a Json Object:
     "isDisable": true
   }
 }`
+
+`<TreeView data={jsonObj} />`
 
 [<img src="http://r-arbol.surge.sh/tree-sample.png" width="242">](http://r-arbol.surge.sh/)
 
