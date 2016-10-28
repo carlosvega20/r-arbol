@@ -25,7 +25,7 @@ Based on a Json Object:
   }
 }`
 
-[<img src="http://r-arbol.surge.sh/tree-samples.png" width="240">](http://r-arbol.surge.sh/)
+[<img src="http://r-arbol.surge.sh/tree-sample.png" width="240">](http://r-arbol.surge.sh/)
 
 
 
