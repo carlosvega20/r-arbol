@@ -1,0 +1,20 @@
+.json-skin { font-family: monospace,'Courier'; }
+.json-skin ul { padding-left: 0; display: inline; list-style: none; }
+.json-skin .elm-arbol { display:  inline; }
+.json-skin li { padding-left: 20px; }
+.json-skin ul.elm-object::before { content: '{'; font-weight: bold; }
+.json-skin ul.elm-object::after { content: '}'; font-weight: bold; }
+.json-skin ul.elm-array::before { content: '['; font-weight: bold; }
+.json-skin ul.elm-array::after { content: ']'; font-weight: bold; }
+.json-skin span.elm-more {cursor: pointer; }
+.json-skin span.elm-more::before { content: '...'; font-weight: bold; color: gray; }
+.json-skin .elm-label { color: #008000; font-weight: bold; }
+.json-skin .elm-label::after { content: ':'; color: #000; }
+.json-skin .elm-str { color: #BA2121; }
+.json-skin .elm-undefined, .json-skin .elm-boolean, .json-skin .elm-null,
+.json-skin .elm-number { color: darkblue; }
+.json-skin .elm-func { color: gray; }
+.json-skin .elm-array >li >span.elm-label { display: none; }
+.json-skin .elm-arbol >span { cursor: pointer; font-weight: bold; }
+.json-skin .elm-arbol.expanded >span::before { content: ' - '; font-weight: bold; }
+.json-skin .elm-arbol.collapsed >span::before { content: ' + '; font-weight: bold; }
