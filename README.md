@@ -29,8 +29,8 @@ Based on a Json Object:
 
 
 
-skin:
-Visual elements as '+', '-', '...' are separated from the logic and can be edited in CSS styles.
+Skin:
+Visual elements as '+', '-', '...', etc are separated from the logic and can be edited in CSS styles.
 
 ##Get Started
 1. `npm start`
