@@ -36,8 +36,6 @@ Based on a Json Object:
 
 [<img src="http://r-arbol.surge.sh/tree-sample.png" width="242">](http://r-arbol.surge.sh/)
 
-
-
 Skin:
 Visual elements as '+', '-', '...', etc are separated from the logic and can be edited in CSS styles.
 
