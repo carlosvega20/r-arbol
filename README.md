@@ -39,9 +39,6 @@ Based on a Json Object:
 Skin:
 Visual elements as '+', '-', '...', etc are separated from the logic and can be edited in CSS styles.
 
-##Get Started
-1. `npm start`
-
 ##Roadmap
 - [x] Render Visual Tree
 	- [x] Any Javascript Object (json, array, etc)
