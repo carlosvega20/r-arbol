@@ -1,23 +1,22 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-class Trunk extends Component {
-  constructor (props) {
-    super(props)
-    this.state = { expanded: true }
-  }
-  togglePanel = (e) => {
+const Trunk = (props) => {
+  const [toggle, setToggle] = useState(true)
+  
+  const togglePanel = (e) => {
     e.stopPropagation()
-    this.setState({ expanded: !this.state.expanded })
+    setToggle(!toggle)
   }
-  render = () =>
-    <div className={`elm-arbol ${this.state.expanded?' expanded':' collapsed'}`}>
-      <span onClick={this.togglePanel.bind(this)}/>
-      <ul {...this.props}>
-        {this.state.expanded?
-          this.props.children:
-          <span className='elm-more' onClick={this.togglePanel.bind(this)}/>}
+  return (
+    <div className={`elm-arbol ${toggle?' expanded':' collapsed'}`}>
+      <span onClick={togglePanel}/>
+      <ul {...props}>
+        {toggle?
+          props.children:
+          <span className='elm-more' onClick={togglePanel}/>}
       </ul>
     </div>
+  )
 }
 
 const Branch = (props) => <li {...props}>{props.children}</li>
@@ -41,13 +40,13 @@ const getValue = (value) => {
   }
 }
 
-const Arbol = (props) =>
-<Trunk className={`elm-${Array.isArray(props.data)?'array':'object'}`}>
-  {[...Object.keys(props.data).map((k, i) =>
+const Arbol = ({ data }) =>
+<Trunk className={`elm-${Array.isArray(data)?'array':'object'}`}>
+  {[...Object.keys(data).map((k, i) =>
     <Branch key={i}>
       <Key className='elm-label'>{`"${k}"`}</Key>
-      {getValue(props.data[k])}
-      {Object.keys(props.data)[i+1] !== undefined ? ',':null}
+      {getValue(data[k])}
+      {Object.keys(data)[i+1] !== undefined ? ',':null}
     </Branch>)]}
   </Trunk>
 

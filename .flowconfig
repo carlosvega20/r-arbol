@@ -1,5 +1,0 @@
-[ignore]
-<PROJECT_ROOT>/node_modules/fbjs/.*
-
-[include]
-<PROJECT_ROOT>/src/.*

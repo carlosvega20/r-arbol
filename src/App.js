@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Arbol from './Arbol.js'
 import './arbol-skin.css'
 
@@ -19,14 +19,10 @@ const source = {
   }
 }
 
-class App extends Component {
-  render() {
-    return (
-      <div className="json-skin">
-        <Arbol data={source} />
-      </div>
-    )
-  }
-}
+const App = () => (
+  <div className="json-skin">
+    <Arbol data={source} />
+  </div>
+)
 
 export default App

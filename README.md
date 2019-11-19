@@ -1,10 +1,10 @@
 # r-arbol
-[![npm package](https://img.shields.io/badge/npm-0.2.0-brightgreen.svg)](https://www.npmjs.com/package/r-arbol)
+[![npm package](https://img.shields.io/badge/npm-0.3.0-brightgreen.svg)](https://www.npmjs.com/package/r-arbol)
 
 ReactJS Json Tree Viewer (http://r-arbol.surge.sh/)
 
 ##Usage
-npm install -g r-arbol
+npm install r-arbol
 
 then in your code:
 
