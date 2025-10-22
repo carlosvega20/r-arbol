@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/r-arbol/static/css/main.8d56d115.css",
+    "main.js": "/r-arbol/static/js/main.e4787627.js",
+    "index.html": "/r-arbol/index.html",
+    "main.8d56d115.css.map": "/r-arbol/static/css/main.8d56d115.css.map",
+    "main.e4787627.js.map": "/r-arbol/static/js/main.e4787627.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d56d115.css",
+    "static/js/main.e4787627.js"
+  ]
+}
